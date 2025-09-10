@@ -7,7 +7,7 @@
 
 body {
   color: #fff;
-  background: url("swir2.jpg") no-repeat center center/cover;
+  background: url("image/swir3.jpg") no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
 }
@@ -111,4 +111,18 @@ body::before {
 .rsvp-form button:hover {
   background: #e33a3a;
 }
+html {
+  scroll-behavior: smooth;
+}
+.rsvp-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+  padding: 50px 20px;
+  background: white;
+}
 
+.rsvp-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
