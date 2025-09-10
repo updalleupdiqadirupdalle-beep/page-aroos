@@ -7,7 +7,7 @@
 
 body {
   color: #fff;
-  background: url("image/swir3.jpg") no-repeat center center/cover;
+  background: url("image/kakey.jpg") no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
 }
