@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- Style file -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
 </head>
 <body>
 </a>
@@ -25,30 +25,28 @@
       <a href="#rsvp" class="rsvp-btn">RSVP Now</a>
     </div>
   </div>
-  <script>
-  // Smooth scroll
-  document.documentElement.style.scrollBehavior = "smooth";
-
-  // RSVP animation
-  document.addEventListener("scroll", function () {
-    const rsvp = document.querySelector(".rsvp-section");
-    const rect = rsvp.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      rsvp.classList.add("visible");
-    }
-  });
 </script>
 
-  <!-- RSVP Section -->
-<section id="rsvp" class="rsvp-section">
-  <div class="container">
-    <h2>RSVP</h2>
-    <p>Fadlan buuxi form-kan si aan u ogaano inaad ka soo qayb galeyso 👇</p>
+<!-- RSVP section -->
+<div id="rsvp" class="rsvp-form">
+  <h2>RSVP</h2>
+  <form action="https://formsubmit.co/updalleupdiqadirupdalle@gmail.com" method="POST">
+    <!-- magaca -->
+    <input type="text" name="name" placeholder="Enter Your Name" required>
+    <!-- email -->
+    <input type="email" name="email" placeholder="Enter Your Email" required>
+    <!-- su’aasha -->
+    <select name="attend" required>
+      <option value="" disabled selected>Will you attend?</option>
+      <option value="Yes">Yes, I'll be there!</option>
+      <option value="No">Sorry, I can't make it</option>
+    </select>
+    <!-- button -->
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
-    <!-- Embed Google Form -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFyKXTdFKpG6y_2dHhHWavIvK-PpcwHP-Hlol1AUK7ZMToIg/viewform?embedded=true"
-            width="640" height="800" frameborder="0"
-            marginheight="0" marginwidth="0">Loading…</iframe>
+
   </div>
 </section>
     
