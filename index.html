@@ -12,7 +12,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-
 </a>
   <div class="container">
     <div class="content">
@@ -26,29 +25,34 @@
       <a href="#rsvp" class="rsvp-btn">RSVP Now</a>
     </div>
   </div>
+  <script>
+  // Smooth scroll
+  document.documentElement.style.scrollBehavior = "smooth";
 
-  <!-- RSVP section -->
-  <div id="rsvp" class="rsvp-form">
+  // RSVP animation
+  document.addEventListener("scroll", function () {
+    const rsvp = document.querySelector(".rsvp-section");
+    const rect = rsvp.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      rsvp.classList.add("visible");
+    }
+  });
+</script>
+
+  <!-- RSVP Section -->
+<section id="rsvp" class="rsvp-section">
+  <div class="container">
     <h2>RSVP</h2>
+    <p>Fadlan buuxi form-kan si aan u ogaano inaad ka soo qayb galeyso 👇</p>
+
+    <!-- Embed Google Form -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFyKXTdFKpG6y_2dHhHWavIvK-PpcwHP-Hlol1AUK7ZMToIg/viewform?embedded=true"
+            width="640" height="800" frameborder="0"
+            marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</section>
     
   </div>
 </body>
 </html>
-<form action="https://formsubmit.co/updalleupdiqadirupdalle@gmail.com" method="POST">
-  <!-- Hidden settings -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="RSVP Response from Website">
-  <input type="hidden" name="_next" value="https://updiqadirupdalle-beep.github.io/thankyou.html">
 
-  <!-- Visible fields -->
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  
-  <select name="attendance" required>
-    <option value="">Will you attend?</option>
-    <option value="Yes">Yes, I will attend</option>
-    <option value="No">No, I can't attend</option>
-  </select>
-
-  <button type="submit">Submit</button>
-</form>
