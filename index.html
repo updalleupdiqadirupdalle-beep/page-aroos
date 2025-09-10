@@ -9,8 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- Style file -->
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+</a>
   <div class="container">
     <div class="content">
       <h1>You're Invited!</h1>
@@ -27,16 +30,25 @@
   <!-- RSVP section -->
   <div id="rsvp" class="rsvp-form">
     <h2>RSVP</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <select required>
-        <option value="" disabled selected>Will you attend?</option>
-        <option value="Yes">Yes, I'll be there!</option>
-        <option value="No">Sorry, I can't make it</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
+    
   </div>
 </body>
 </html>
+<form action="https://formsubmit.co/updalleupdiqadirupdalle@gmail.com" method="POST">
+  <!-- Hidden settings -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="RSVP Response from Website">
+  <input type="hidden" name="_next" value="https://updiqadirupdalle-beep.github.io/thankyou.html">
+
+  <!-- Visible fields -->
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  
+  <select name="attendance" required>
+    <option value="">Will you attend?</option>
+    <option value="Yes">Yes, I will attend</option>
+    <option value="No">No, I can't attend</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
