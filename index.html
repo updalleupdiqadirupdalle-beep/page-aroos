@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Invitation</title>
+  <!-- Font + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Style file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>You're Invited!</h1>
+      <h2>Join Us For an Unforgettable Night</h2>
+      <div class="details">
+        <p><i class="fas fa-calendar-alt"></i> Date: December 30, 2025</p>
+        <p><i class="fas fa-clock"></i> Time: 8:00pm</p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Silver Hall, Mogadishu</p>
+      </div>
+      <a href="#rsvp" class="rsvp-btn">RSVP Now</a>
+    </div>
+  </div>
+
+  <!-- RSVP section -->
+  <div id="rsvp" class="rsvp-form">
+    <h2>RSVP</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <select required>
+        <option value="" disabled selected>Will you attend?</option>
+        <option value="Yes">Yes, I'll be there!</option>
+        <option value="No">Sorry, I can't make it</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
