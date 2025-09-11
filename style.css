@@ -5,7 +5,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.body {
+.container {
   color: #fff;
   background-image: url("images/kakey.jpg");
   background-position: center;
@@ -132,6 +132,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
