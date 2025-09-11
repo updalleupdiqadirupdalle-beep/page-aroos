@@ -7,7 +7,7 @@
 
 .container {
   color: #fff;
-  background-image: url("image/kakey.jpg");
+  background-image: url("images/kakey.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,6 +132,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
